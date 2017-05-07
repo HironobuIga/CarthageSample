@@ -14,6 +14,12 @@
 		1E2D6BEF1EBF0B5F00B886F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2D6BED1EBF0B5F00B886F4 /* LaunchScreen.storyboard */; };
 		1E2D6BFA1EBF0B5F00B886F4 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D6BF91EBF0B5F00B886F4 /* SampleAppTests.swift */; };
 		1E2D6C051EBF0B5F00B886F4 /* SampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D6C041EBF0B5F00B886F4 /* SampleAppUITests.swift */; };
+		1E2D6C141EBF104800B886F4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2D6C131EBF104800B886F4 /* Nimble.framework */; };
+		1E2D6C161EBF106B00B886F4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2D6C151EBF106B00B886F4 /* Quick.framework */; };
+		1E2D6C181EBF10C700B886F4 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E2D6C151EBF106B00B886F4 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E2D6C191EBF10C700B886F4 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E2D6C131EBF104800B886F4 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E2D6C1B1EBF116C00B886F4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D6C1A1EBF116C00B886F4 /* Vehicle.swift */; };
+		1E2D6C1D1EBF13CE00B886F4 /* VehicleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D6C1C1EBF13CE00B886F4 /* VehicleSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1E2D6C171EBF10AB00B886F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E2D6C181EBF10C700B886F4 /* Quick.framework in CopyFiles */,
+				1E2D6C191EBF10C700B886F4 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1E2D6BE11EBF0B5F00B886F4 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2D6BE41EBF0B5F00B886F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +67,10 @@
 		1E2D6C001EBF0B5F00B886F4 /* SampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2D6C041EBF0B5F00B886F4 /* SampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITests.swift; sourceTree = "<group>"; };
 		1E2D6C061EBF0B5F00B886F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E2D6C131EBF104800B886F4 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		1E2D6C151EBF106B00B886F4 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		1E2D6C1A1EBF116C00B886F4 /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		1E2D6C1C1EBF13CE00B886F4 /* VehicleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2D6C161EBF106B00B886F4 /* Quick.framework in Frameworks */,
+				1E2D6C141EBF104800B886F4 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,7 @@
 				1E2D6BF81EBF0B5F00B886F4 /* SampleAppTests */,
 				1E2D6C031EBF0B5F00B886F4 /* SampleAppUITests */,
 				1E2D6BE21EBF0B5F00B886F4 /* Products */,
+				1E2D6C121EBF104800B886F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +130,7 @@
 				1E2D6BEB1EBF0B5F00B886F4 /* Assets.xcassets */,
 				1E2D6BED1EBF0B5F00B886F4 /* LaunchScreen.storyboard */,
 				1E2D6BF01EBF0B5F00B886F4 /* Info.plist */,
+				1E2D6C1A1EBF116C00B886F4 /* Vehicle.swift */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -112,6 +140,7 @@
 			children = (
 				1E2D6BF91EBF0B5F00B886F4 /* SampleAppTests.swift */,
 				1E2D6BFB1EBF0B5F00B886F4 /* Info.plist */,
+				1E2D6C1C1EBF13CE00B886F4 /* VehicleSpec.swift */,
 			);
 			path = SampleAppTests;
 			sourceTree = "<group>";
@@ -123,6 +152,15 @@
 				1E2D6C061EBF0B5F00B886F4 /* Info.plist */,
 			);
 			path = SampleAppUITests;
+			sourceTree = "<group>";
+		};
+		1E2D6C121EBF104800B886F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E2D6C151EBF106B00B886F4 /* Quick.framework */,
+				1E2D6C131EBF104800B886F4 /* Nimble.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +190,7 @@
 				1E2D6BF11EBF0B5F00B886F4 /* Sources */,
 				1E2D6BF21EBF0B5F00B886F4 /* Frameworks */,
 				1E2D6BF31EBF0B5F00B886F4 /* Resources */,
+				1E2D6C171EBF10AB00B886F4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -264,6 +303,7 @@
 			files = (
 				1E2D6BE71EBF0B5F00B886F4 /* ViewController.swift in Sources */,
 				1E2D6BE51EBF0B5F00B886F4 /* AppDelegate.swift in Sources */,
+				1E2D6C1B1EBF116C00B886F4 /* Vehicle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2D6BFA1EBF0B5F00B886F4 /* SampleAppTests.swift in Sources */,
+				1E2D6C1D1EBF13CE00B886F4 /* VehicleSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +484,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = Y827F3LXSQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SampleAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlgoHI.SampleAppTests;
@@ -458,6 +503,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = Y827F3LXSQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SampleAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlgoHI.SampleAppTests;
@@ -514,6 +563,7 @@
 				1E2D6C0B1EBF0B5F00B886F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E2D6C0C1EBF0B5F00B886F4 /* Build configuration list for PBXNativeTarget "SampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +572,7 @@
 				1E2D6C0E1EBF0B5F00B886F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E2D6C0F1EBF0B5F00B886F4 /* Build configuration list for PBXNativeTarget "SampleAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +581,7 @@
 				1E2D6C111EBF0B5F00B886F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
